@@ -8,4 +8,4 @@ If I get in trouble for this, ok. I am tired of people asking me for help in cla
 
 -- Rayool
 
-also if you ever get into going with less and less UI in linux i recomend getting a WM (window manager) such as i3 or sway. The i3 folder has *my* normally upto date config file. Dont be afraid to write your own, this is what works for me.
+also if you ever get into going with less and less UI in linux I recomend getting a WM (window manager) such as i3 or sway. The i3 folder has *my* normally upto date config file. Dont be afraid to write your own, this is what works for me.
