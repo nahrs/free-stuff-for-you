@@ -1,3 +1,6 @@
+/************************
+** Not written by raul **
+************************/
 import java.io.*;
 import static java.lang.System.*;
 import java.lang.Math;
