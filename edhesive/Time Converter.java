@@ -6,11 +6,11 @@ import java.lang.Math;
 
 class Main{
     public static void main(String[] args){
-        Scanner s = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         
         System.out.println("Seconds Since Unix Epoch:");
         
-        int sec = s.nextInt();
+        int sec = scan.nextInt();
         
         int yr = (sec / 31104000);
         sec -= yr * 31104000;
@@ -36,5 +36,8 @@ class Main{
     }
 
 }
+
+
+
 
 
