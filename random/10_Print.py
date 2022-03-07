@@ -1,4 +1,4 @@
-#		10Print in py			
+#    10Print in py			
 #								
 # Written by Raul Santos	    
 # https://git.nahrs.dev		    
