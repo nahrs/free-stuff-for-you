@@ -1,0 +1,61 @@
+from turtle import Screen, Turtle
+import random, math
+import tkinter as Tk
+
+wn = Screen()
+wn.setup(width=850, height=440, startx=810, starty=100)
+wn.title("10 Print")
+wn.bgcolor("black")
+wn.colormode(255)
+wn.tracer(0)
+t = Turtle()
+t.pencolor("#ffffff")
+t.speed(0)
+spacing = 3
+
+width = wn.window_width()
+height = wn.window_height()
+w = -width / 2
+h = height / 2 - spacing
+x = -width / 2
+y = height / 2 - spacing
+t.pu()
+t.ht()
+t.goto(w, h)
+
+def randomPColor():
+	t.pencolor("#" + str(math.floor(random.random() * 888888) + 100000))
+
+def fdSlash():
+	t.goto(x, y)
+	t.pd()
+	t.goto(x + spacing, y + spacing)
+	t.pu()
+
+def bkSlash():
+	t.goto(x, y + spacing)
+	t.pd()
+	t.goto(x + spacing, y)
+	t.pu()
+
+t.width(spacing * .10)
+prob = .5
+
+while(True):
+	if (random.random() < prob):
+		fdSlash()
+	else:
+		bkSlash()
+	x = x + spacing
+	randomPColor()
+	if x > width / 2:
+		t.pu()
+		x = w
+		y = y - spacing
+		#prob += .01
+	if y < - height / 2:
+		t.goto(w, h)
+		x = w
+		y = h
+		wn.update()
+		Tk.mainloop()
