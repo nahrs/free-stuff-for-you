@@ -1,16 +1,12 @@
-#################################
-#		10Print in py			#
-#								#
-# Written by Raul Santos	    #
-# https://git.nahrs.dev		    #
-#								#
-# inspo from Daniel Shiffman    #
-# https://youtu.be/bEyTZ5ZZxZs  #
-#								#
-# wrote this on a whim 3/7/2022 #
-#								#
-#################################
-
+#		10Print in py			
+#								
+# Written by Raul Santos	    
+# https://git.nahrs.dev		    
+#								
+# inspo from Daniel Shiffman    
+# https://youtu.be/bEyTZ5ZZxZs  
+#								
+# wrote this on a whim 3/7/2022 
 
 from turtle import Screen, Turtle
 import random, math
