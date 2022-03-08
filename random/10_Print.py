@@ -57,7 +57,7 @@ while(True):
 	else:
 		bkSlash()
 	x = x + spacing
-	prob += .009
+	#prob += .009
 	#randomPColor()
 	if x > width / 2:
 		t.pu()
@@ -70,4 +70,3 @@ while(True):
 		y = h
 		wn.update()
 		Tk.mainloop()
-		
