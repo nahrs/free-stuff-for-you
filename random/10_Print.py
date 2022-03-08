@@ -13,15 +13,15 @@ import random, math
 import tkinter as Tk
 
 wn = Screen()
-wn.setup(width=850, height=440, startx=810, starty=100)
+wn.setup(width=1920, height=1080, startx=810, starty=100)
 wn.title("10 Print")
 wn.bgcolor("black")
 wn.colormode(255)
-wn.tracer(0)
+wn.tracer(3)
 t = Turtle()
 t.pencolor("#ffffff")
 t.speed(0)
-spacing = 3
+spacing = 20
 
 width = wn.window_width()
 height = wn.window_height()
@@ -57,15 +57,17 @@ while(True):
 	else:
 		bkSlash()
 	x = x + spacing
-	randomPColor()
+	prob += .009
+	#randomPColor()
 	if x > width / 2:
 		t.pu()
 		x = w
-		y = y - spacing
-		#prob += .01
+		y -= spacing
+		prob = .5
 	if y < - height / 2:
 		t.goto(w, h)
 		x = w
 		y = h
 		wn.update()
 		Tk.mainloop()
+		
